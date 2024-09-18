@@ -1,0 +1,19 @@
+{
+  "name": "food-website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tailwindcss -i ./src/styles.css -o ./dist/styles.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "daisyui": "^4.12.10"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.12"
+  }
+}

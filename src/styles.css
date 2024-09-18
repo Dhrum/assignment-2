@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for your food website */
+
+/* Navbar styles */
+nav {
+  background-color: #2d3748; /* Dark gray */
+  padding: 1rem;
+}
+
+nav button {
+  color: #fff; /* White text for buttons */
+}
+
+/* Banner styles */
+.carousel-item {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Set height for banner images */
+}
+
+.carousel-item img {
+  object-fit: cover; /* Ensure the images cover the entire container */
+}
+
+.carousel-item h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* API section styles */
+#food-list div {
+  transition: transform 0.2s ease-in-out;
+}
+
+#food-list div:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+}
+
+/* FAQ Section */
+section.bg-gray-100 {
+  background-color: #f7fafc;
+  padding: 2rem;
+}
+
+section h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+section .bg-white {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styles */
+footer {
+  background-color: #2d3748;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  margin: 0 0.5rem;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+footer a:hover {
+  color: #4299e1; /* Change color to light blue on hover */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .carousel-item {
+    height: 300px; /* Reduce banner height for mobile */
+  }
+
+  #food-list {
+    grid-template-columns: 1fr; /* One column layout for small screens */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #food-list {
+    grid-template-columns: 1fr 1fr; /* Two columns layout for medium screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  #food-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Four columns layout for large screens */
+  }
+}
